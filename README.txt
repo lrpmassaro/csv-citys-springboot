@@ -34,7 +34,8 @@ http://localhost:8080/api/citys/addCity
 	"mesoregion":"Centro Oeste"
 }
 
-8 - Permitir deletar uma cidade; http://localhost:8080/api/citys/deleteCity
+8 - Permitir deletar uma cidade;
+http://localhost:8080/api/citys/deleteCity
 
 9 - Permitir selecionar uma coluna (do CSV) e através dela entrar com uma string para filtrar. retornar assim todos os objetos que contenham tal string; http://localhost:8080/api/citys/findByFilter/{column}/{filter}
 
