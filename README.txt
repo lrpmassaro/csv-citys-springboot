@@ -37,7 +37,8 @@ http://localhost:8080/api/citys/addCity
 8 - Permitir deletar uma cidade;
 http://localhost:8080/api/citys/deleteCity
 
-9 - Permitir selecionar uma coluna (do CSV) e através dela entrar com uma string para filtrar. retornar assim todos os objetos que contenham tal string; http://localhost:8080/api/citys/findByFilter/{column}/{filter}
+9 - Permitir selecionar uma coluna (do CSV) e através dela entrar com uma string para filtrar. retornar assim todos os objetos que contenham tal string;
+http://localhost:8080/api/citys/findByFilter/{column}/{filter}
 
 10 - Retornar a quantidade de registro baseado em uma coluna. Não deve contar itens iguais;
 http://localhost:8080/api/citys/findByColumn/{column}
