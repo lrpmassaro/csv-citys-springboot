@@ -22,7 +22,8 @@ http://localhost:8080/api/citys/citiesByState/{uf}
 http://localhost:8080/api/citys/addCity
 {
 	"ibge_id":"1200089",
-	"uf":"MS", "name":"Ladario",
+	"uf":"MS",
+	"name":"Ladario",
 	"capital":"false",
 	"lon":-19.00,
 	"lat":-57.00,
