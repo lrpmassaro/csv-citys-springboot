@@ -16,7 +16,7 @@ http://localhost:8080/api/citys/numberOfCityByState/{uf}
 http://localhost:8080/api/citys/findByIdIbge/{Ibge_Id}
 
 6 - Exibir o nome das cidades de um estado selecionado;
-http://localhost:8080/api/citys/citiesByState/{uf}
+http://localhost:8080/api/citys/findCitiesByState/{uf}
 
 7 - Adicionar uma nova Cidade;
 http://localhost:8080/api/citys/addCity
