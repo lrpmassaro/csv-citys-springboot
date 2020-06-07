@@ -24,7 +24,7 @@ public class CityService {
 
 	String line = null;
 
-	public void saveCityData() {
+	public String saveCityData() {
 		try {
 			BufferedReader bfrd = new BufferedReader(new FileReader("src/main/resources/citys.csv"));
 			bfrd.readLine();
@@ -48,13 +48,14 @@ public class CityService {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		return "Arquivo CSV importado com sucesso!";
 	}
 
 	public List<City> findCapital() {
 		return cityRepository.findCapital();
 	}
 
-	public String numberOfCitiesByState(String uf) {
+	public Integer numberOfCitiesByState(String uf) {
 		return cityRepository.numberOfCitiesByState(uf);
 	}
 
@@ -71,10 +72,10 @@ public class CityService {
 	}
 
 	public List<City> findByFilter(String column, String filter) {
-		return columnsRepository.findByFilters(column, filter);
+		return cityRepository.findByFilter(column, filter);
 	}
 	
-	public List<City> findByColumn(String column) {
+	public Integer findByColumn(String column) {
 		return cityRepository.findByColumn(column);
 	}
 

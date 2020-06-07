@@ -40,8 +40,8 @@ public class CityController {
 	@RequestMapping(value = "/numberOfCitiesByState/{uf}", method = RequestMethod.GET)
 	public ResponseEntity<?> numberOfCitiesByState(@PathVariable(value = "uf") String uf) {
 		try {
-			String total = cityService.numberOfCitiesByState(uf);
-			return ResponseEntity.ok(total);
+			Integer cities = cityService.numberOfCitiesByState(uf);
+			return ResponseEntity.ok(cities);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -59,7 +59,7 @@ public class CityController {
 		return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
 	}
 
-	@RequestMapping(value = "/citiesByState/{uf}", method = RequestMethod.GET)
+	@RequestMapping(value = "/findCitiesByState/{uf}", method = RequestMethod.GET)
 	public ResponseEntity<?> citiesByState(@PathVariable(value = "uf") String uf) {
 		try {
 			List<City> cities = cityService.findCitiesByState(uf);
@@ -87,7 +87,7 @@ public class CityController {
 
 	public ResponseEntity<?> countRecordsByColumn(@PathVariable(value = "column") String column) {
 		try {
-			List<City> cities = cityService.findByColumn(column);
+			Integer cities = cityService.findByColumn(column);
 			return ResponseEntity.ok(cities);
 		} catch (Exception e) {
 			e.printStackTrace();
