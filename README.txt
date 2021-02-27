@@ -36,7 +36,7 @@ http://localhost:8080/api/citys/addCity
 8 - Deletar uma cidade;
 http://localhost:8080/api/citys/deleteCity
 
-9 - Selecionar uma coluna eentrar com uma string para filtrar. retornar todos os objetos que contenham tal string;
+9 - Selecionar uma coluna e entrar com uma string para filtrar todos os objetos que contenham tal string;
 http://localhost:8080/api/citys/findByFilter/{column}/{filter}
 
 10 - Exibir a quantidade de registro baseado em uma coluna. Não exibir itens iguais;
